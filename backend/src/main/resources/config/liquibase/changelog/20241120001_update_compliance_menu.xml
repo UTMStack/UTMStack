@@ -9,7 +9,25 @@
             UPDATE utm_menu
             SET
                 name = 'Overview',
-                url = 'compliance/report-viewer'
+                url = 'compliance/report-viewer?standardId=400'
+            WHERE id = 502;
+
+            UPDATE utm_menu
+            SET
+                name = 'Overview',
+                url = 'compliance/report-viewer?standardId=400'
+            WHERE id = 503;
+
+            UPDATE utm_menu
+            SET
+                name = 'Overview',
+                url = 'compliance/report-viewer?standardId=400'
+            WHERE id = 504;
+
+            UPDATE utm_menu
+            SET
+                name = 'Overview',
+                url = 'compliance/report-viewer?standardId=400'
             WHERE id = 505;
 
             ALTER TABLE utm_compliance_report_config
