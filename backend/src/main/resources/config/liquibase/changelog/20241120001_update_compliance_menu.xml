@@ -6,7 +6,7 @@
 
     <changeSet id="20241120001" author="Manuel">
         <sql dbms="postgresql" splitStatements="true" stripComments="true">
-            UPDATE utm_menu
+            /*UPDATE utm_menu
             SET
                 name = 'Overview',
                 url = 'compliance/report-viewer?standardId=400'
@@ -28,10 +28,13 @@
             SET
                 name = 'Overview',
                 url = 'compliance/report-viewer?standardId=400'
-            WHERE id = 505;
+            WHERE id = 505;*/
 
             ALTER TABLE utm_compliance_report_config
-                ADD COLUMN note TEXT;
+                ADD COLUMN config_report_note TEXT;
+
+            ALTER TABLE utm_compliance_report_config
+                ADD COLUMN config_report_name varchar(250);
 
         </sql>
     </changeSet>
